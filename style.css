@@ -3,63 +3,138 @@
     padding: 0px;
 }
 
+:root{
+    /*colors*/
+    --primary: #CBCFD8;
+    --secundary: #1E3D71;
+    --blue: #3050CE;
+    --grey: #697790;
+}
+
 header{
     width: 100%;
     height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(172, 168, 168, 0.212);
+    background-color: rgba(255, 255, 255, 0.637);
     position: fixed;
-    padding: 0px 20px 0px 20px;
+    padding: 20px 60px 20px 60px;
     box-sizing: border-box;
 }
+    header h2{
+        color: var(--secundary);
+    }
+
     nav{
         width: 60%;
-        background-color: blue;
+        height: 100%;
+        /* background-color: blue; */
     }
 
     nav ul{
         display: flex;
+        height: 100%;
     }
 
     .menu{
         width: 20%;
         height: 30px;
+        height: 100%;
         text-align: center;
         list-style: none;
         font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+
+        .menu:hover{
+            cursor: pointer;
+            background-color: #4765dd;
+            color: white;
+            border-radius: 5px;
+        }
+
         .menu a{
             text-decoration: none;
+            color: var(--grey);
+            font-size: 16px;
+            font-weight: 600;
+        }
+    
+    .button-menu {
+        border-radius: 5px;
+        background-color: var(--blue);
+    }
+        .button-menu a{
+            color: white;
+            font-weight: 600;
         }
 
 .landing-page{
     width: 100%;
     height: 630px;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
 }
 
     .div-information-left{
         width: 50%;
         height: 100%;
-        background-color: aliceblue;
+        /* background-color: aliceblue; */
     }
 
     .information-landing-page{
-        width: 80%;
-        background-color: brown;
+        width: 440px;
+        /* background-color: brown; */
         position: relative;
         float: left;
-        margin-top: 10rem;
-        margin-left: 40px;
+        margin-top: 120px;
+        margin-left: 60px;
     }
 
         .information-landing-page h1{
             font-size: 70px;
+            color: var(--secundary);
+            margin-bottom: 16px;
         }
 
+        .information-landing-page p{
+            font-size: 22px;
+            color: var(--grey);
+        }
+    
+    .container-icon-information{
+        /* width: 200px; */
+        background-color: #1E3D71;
+        display: flex;
+        position: relative;
+        float: left;
+    }
+
+        .icon{
+            width: 26px;
+            height: 30px;
+            background-color: yellow;
+            margin-right: 20px;
+        }
+
+    .container-vaccinations{
+        width: 140%;
+        position: relative;
+        float: left;
+        margin-left: 60px;
+        background-color: aqua;
+        margin-top: 80px;
+    }
+        .information-schedule-vaccinations{
+            width: 100%;
+            height: 100px;
+            background-color: rebeccapurple;
+            position: relative;
+            float: left;
+        }
     #img-landing-page{
         width: 50%;
         height: 100%;
