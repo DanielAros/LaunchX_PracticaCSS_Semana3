@@ -5,10 +5,10 @@
 
 :root{
     /*colors*/
-    --primary: #CBCFD8;
-    --secundary: #1E3D71;
-    --blue: #3050CE;
-    --grey: #697790;
+    --primary: #1f3e72;
+    --secundary: #6d7b93;
+    --button: #3454d2;
+    --title: #3454d2;
 }
 
 header{
@@ -17,13 +17,14 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.637);
+    background-color: rgba(255, 255, 255, 0.918);
     position: fixed;
     padding: 20px 60px 20px 60px;
     box-sizing: border-box;
+    z-index: 3;
 }
     header h2{
-        color: var(--secundary);
+        color: var(--title);
     }
 
     nav{
@@ -58,14 +59,14 @@ header{
 
         .menu a{
             text-decoration: none;
-            color: var(--grey);
+            color: var(--secundary);
             font-size: 16px;
-            font-weight: 600;
+            font-weight: 900;
         }
     
     .button-menu {
         border-radius: 5px;
-        background-color: var(--blue);
+        background-color: var(--button);
     }
         .button-menu a{
             color: white;
@@ -75,7 +76,7 @@ header{
 .landing-page{
     width: 100%;
     height: 630px;
-    /* background-color: aqua; */
+    background-color: #f0f2f57c;
     display: flex;
 }
 
@@ -86,7 +87,7 @@ header{
     }
 
     .information-landing-page{
-        width: 440px;
+        width: 100%;
         /* background-color: brown; */
         position: relative;
         float: left;
@@ -96,19 +97,31 @@ header{
 
         .information-landing-page h1{
             font-size: 70px;
-            color: var(--secundary);
+            color: var(--primary);
             margin-bottom: 16px;
         }
 
-        .information-landing-page p{
+        .p-landingpage{
             font-size: 22px;
-            color: var(--grey);
+            color: var(--secundary);
+            font-weight: 500;
         }
     
+    .container-icons-yellow{
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+
+    .color-blue{
+        color: var(--primary);
+        font-weight: 600;
+    }
+
     .container-icon-information{
         /* width: 200px; */
-        background-color: #1E3D71;
+        /* background-color: #1E3D71; */
         display: flex;
+        align-items: center;
         position: relative;
         float: left;
     }
@@ -116,27 +129,135 @@ header{
         .icon{
             width: 26px;
             height: 30px;
-            background-color: yellow;
+            /* background-color: yellow; */
             margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
         }
+
+        .icon-color-blue{
+            background-color: rgba(39, 71, 197, 0.2);
+        }
+
+        .icon-color-yellow{
+            background-color: rgba(255, 208, 18, 0.2);
+        }
+
+            .icon img{
+                width: 20px;
+                height: 20px;
+            }
 
     .container-vaccinations{
         width: 140%;
         position: relative;
         float: left;
         margin-left: 60px;
-        background-color: aqua;
-        margin-top: 80px;
+        /* background-color: aqua; */
+        margin-top: 8%;
+        z-index: 3;
     }
-        .information-schedule-vaccinations{
+
+        .size-p{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .schedule-vaccinations{
             width: 100%;
             height: 100px;
-            background-color: rebeccapurple;
+            background-color: rgba(255, 255, 255, 0.89);
             position: relative;
             float: left;
+            padding: 20px 30px 20px 30px;
+            box-sizing: border-box;
+            display: flex;
         }
+            .information-schedule-vaccinations{
+                width: 25%;
+                height: 100%;
+                /* background-color: #697790; */
+            }
+
+                .schedule-icon{
+                    width: 100%;
+                    align-items: center;
+                }
+
+                .data-schedule{
+                    margin-left: 46px;
+                    /* color: var(--secundary); */
+                    font-weight: bold;
+                }
+
+                .container-button{
+                   display: flex;
+                   align-items: center;
+                   justify-content: center;
+                }
+
+                .button{
+                    width: 100px;
+                    border-radius: 4px;
+                    padding: 10px;
+                    background-color: var(--button);
+                    color: white;
+                    border-style: none;
+                    cursor: pointer;
+                }
     #img-landing-page{
         width: 50%;
         height: 100%;
+        z-index: 2;
     }
 
+.section-imgs-logo{
+    width: 100%;
+    /* height: 120px; */
+    background-color: #f0f2f57c;
+    padding: 20px;
+    box-sizing: border-box;
+    display: inline-flex;
+}
+
+    .container-img-logo{
+        width: 25%;
+        height: 80px;
+        /* background-color: grey; */
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+    }
+
+        .container-img-logo img{
+            width: 150px;
+            height: 100%;
+        }
+
+.section-vaccine{
+    width: 100%;
+    background-color: #1f3e72;
+    z-index: 3;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.284);
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 1;
+}
+
+    .square-first{
+        left: 20px;
+    }
+
+    .square-two{
+        top: 58%;
+        left: 46.5%;
+    }
